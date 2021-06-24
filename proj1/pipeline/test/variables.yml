@@ -1,0 +1,17 @@
+env: test
+project: proj1
+customer: olivier2t
+git_ssh_key: ((ssh_github-olivier2t.ssh_key))
+code_git_public_repository: 'https://github.com/cycloid-community-catalog/docs-step-by-step-stack.git'
+code_git_branch: code
+git_repository: 'git@github.com:olivier2t/step-by-step.git'
+config_git_branch: config
+stack_git_branch: stacks
+aws_access_key: ((aws_aws-olivier.access_key))
+aws_secret_key: ((aws_aws-olivier.secret_key))
+aws_default_region: eu-west-3
+terraform_storage_bucket_name: olivier2t-terraform-remote-state
+terraform_storage_bucket_path: proj1
+api_login: ((basic_auth_cyclobot-account.username))
+api_password: ((basic_auth_cyclobot-account.password))
+api_url: 'https://http-api.cycloid.io'
