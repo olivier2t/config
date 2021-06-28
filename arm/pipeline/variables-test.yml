@@ -1,8 +1,8 @@
 resource: arm
-docker-hub-email: olivier.deturckheim@cycloid.io
 docker-hub-username: ((basic_auth_dockerhub-olivier2t.username))
 docker-hub-password: ((basic_auth_dockerhub-olivier2t.password))
 docker-hub-repo: arm
 env: test
 project: arm
 customer: olivier2t
+docker-hub-email: olivier.deturckheim@cycloid.io
