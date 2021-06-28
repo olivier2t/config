@@ -1,14 +1,3 @@
-#. config_git_repository (required): git@github.com:MyUser/config.git
-#+ Git repository URL containing the config of the stack.
-config_git_repository: https://github.com/olivier2t/config.git
-
-#. config_git_branch (required): main
-#+ Branch of the config Git repository.
-config_git_branch: main
-
-#. config_git_ssh_key (required): ((ssh_config.ssh_key))
-#+ SSH key pair to fetch the config Git repository.
-config_git_ssh_key: ((ssh_github-olivier2t.ssh_key))
 
 #. resource (required): arm
 #+ Resource name to embbed in the resource Docker image.
