@@ -1,32 +1,11 @@
-
-#. resource (required): arm
-#+ Resource name to embbed in the resource Docker image.
+config_git_repository: 'git@github.com:MyUser/config.git'
+config_git_branch: main
+config_git_ssh_key: ((ssh_config.ssh_key))
 resource: arm
-
-#. docker-hub-email (required): ((docker-hub-email))
-#+ Docker Hub email to use to publish the Docker image.
 docker-hub-email: olivier.deturckheim@cycloid.io
-
-#. docker-hub-username (required): ((docker-hub-username))
-#+ Docker Hub user to use to publish the Docker image.
 docker-hub-username: ((basic_auth_dockerhub-olivier2t.username))
-
-#. docker-hub-password (required): ((docker-hub-password))
-#+ Docker Hub password to use to publish the Docker image.
 docker-hub-password: ((basic_auth_dockerhub-olivier2t.password))
-
-#. docker-hub-repo (required): ((docker-hub-repo))
-#+ Docker Hub repository to use to publish the Docker image.
 docker-hub-repo: arm
-
-#. env (required): test
-#+ Name of the project's environment.
 env: test
-
-#. project (required): arm
-#+ Name of the project.
 project: arm
-
-#. customer (required): olivier2t
-#+ Name of the Cycloid Organization, used as customer variable name.
 customer: olivier2t
