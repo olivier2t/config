@@ -3,3 +3,4 @@ project: counter3
 customer: olivier2t
 git_code_repository: 'https://github.com/olivier2t/simple-counter-front.git'
 git_code_branch: main
+git_code_ssh_key: ((ssh_github.ssh_key))
