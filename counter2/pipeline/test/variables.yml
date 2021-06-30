@@ -1,0 +1,29 @@
+env: test
+project: counter2
+customer: olivier2t
+
+# Code repo configuration
+git_code_repository: https://github.com/olivier2t/simple-counter-front.git
+git_code_branch: main
+
+# Git repo to get the stack
+# git_stack_repository: git@github.com:olivier2t/simple-counter-stack.git
+# git_stack_branch: main
+
+# Git repo used to store the config of the stack
+# git_config_repository: git@github.com:olivier2t/config.git
+# git_config_branch: main
+# git_config_ssh_key: ((ssh_github.ssh_key))
+
+# Aws access to use inside the pipeline
+# aws_access_key: ((aws_aws-olivier.access_key))
+# aws_secret_key: ((aws_aws-olivier.secret_key))
+# aws_region: eu-west-1
+
+# Terraform tfstate storage Configuration
+# terraform_storage_bucket_name: olivier2t-terraform-remote-state
+# terraform_storage_bucket_path: counter2-test-terraform.tfstate
+
+# Cycloid events configuration
+# cycloid_api_key: ((custom_cycloid-api.key))
+# cycloid_api_url: https://http-api.cycloid.io
