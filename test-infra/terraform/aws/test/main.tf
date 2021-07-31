@@ -13,7 +13,7 @@ module "infra" {
   source = "./module-infra"
 
   bastion_allowed_networks = var.bastion_allowed_networks
-  bastion_count            = 0
+  bastion_count            = 1
   bastion_instance_type    = "t3.micro"
   cidr                     = "10.0.0.0/16"
   customer                 = var.customer
