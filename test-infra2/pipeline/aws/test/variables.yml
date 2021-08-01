@@ -8,31 +8,26 @@
 #
 # Any extra variables not found in the original file have been ignored.
 #
-ansible_params:
-  ANSIBLE_PLAYBOOK_NAME: playbook.yml
-  ANSIBLE_PLAYBOOK_PATH: ansible-playbook/
-  EXTRA_ANSIBLE_VARS:
-    customer: olivier2t
-    env: test
-    project: test-infra2
-  SSH_JUMP_URL: user1@Bastion1
-  SSH_PRIVATE_KEYS:
-  - ((ssh_bastion.ssh_key))
-ansible_version: v2.7
 aws_access_key: ((aws_aws-olivier.access_key))
-aws_default_region: eu-west-1
+aws_region: eu-west-1
 aws_secret_key: ((aws_aws-olivier.secret_key))
-config_ansible_path: test-infra2/ansible/aws/test
+bastion_allowed_networks: 0.0.0.0/0
+bastion_count: 1
+bastion_instance_type: t3.small
+cidr: 10.0.0.0/16
 config_git_branch: main
 config_git_private_key: ((ssh_github.ssh_key))
 config_git_repository: git@github.com:olivier2t/config.git
 config_terraform_path: test-infra2/terraform/aws/test
 customer: olivier2t
 env: test
+keypair_name: demo2
+private_subnets:
+- 10.0.1.0/24
 project: test-infra2
-stack_ansible_path: ansible/aws
+public_subnets:
+- 10.0.0.0/24
 stack_git_branch: main
-stack_git_private_key: ((ssh_github.ssh_key))
 stack_git_repository: git@github.com:olivier2t/stack-infra.git
 stack_terraform_path: terraform/aws
 terraform_storage_bucket_name: olivier2t-terraform-remote-state
