@@ -19,8 +19,8 @@ module "infra" {
   customer                 = var.customer
   env                      = var.env
   keypair_name             = "demo"
-  private_subnets          = "[10.0.1.0/24]"
+  private_subnets          = "['10.0.1.0/24']"
   project                  = var.project
-  public_subnets           = "[10.0.0.0/24]"
+  public_subnets           = "['10.0.0.0/24']"
 }
 
