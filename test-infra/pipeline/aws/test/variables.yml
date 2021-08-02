@@ -26,8 +26,7 @@ keypair_name: demo2
 private_subnets:
 - 10.0.1.0/24
 project: test-infra
-public_subnets:
-- 10.0.0.0/24
+public_subnets: null
 stack_git_branch: main
 stack_git_repository: git@github.com:olivier2t/stack-infra.git
 stack_terraform_path: terraform/aws
