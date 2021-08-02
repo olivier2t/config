@@ -12,15 +12,27 @@
 module "infra" {
   source = "./module-infra"
 
-  bastion_allowed_networks = var.bastion_allowed_networks
-  bastion_count            = 1
-  bastion_instance_type    = "t3.micro"
-  cidr                     = "10.0.0.0/16"
-  customer                 = var.customer
-  env                      = var.env
-  keypair_name             = "demo"
-  private_subnets          = "[10.0.1.0/24]"
-  project                  = var.project
-  public_subnets           = "[10.0.0.0/24]"
+  bastion_allowed_networks = [
+    [
+      "0.0.0.0/0"
+    ]
+  ]
+  bastion_count         = 1
+  bastion_instance_type = "t3.micro"
+  cidr                  = "10.0.0.0/16"
+  customer              = var.customer
+  env                   = var.env
+  keypair_name          = "demo"
+  private_subnets = [
+    [
+      "10.0.1.0/24"
+    ]
+  ]
+  project = var.project
+  public_subnets = [
+    [
+      "10.0.0.0/24"
+    ]
+  ]
 }
 
