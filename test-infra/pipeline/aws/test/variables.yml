@@ -22,7 +22,7 @@ config_git_repository: git@github.com:olivier2t/config.git
 config_terraform_path: test-infra/terraform/aws/test
 customer: olivier2t
 env: test
-keypair_name: demo2
+keypair_public: ((custom_keypair.ssh_pub))
 private_subnets:
 - 10.0.1.0/24
 project: test-infra
