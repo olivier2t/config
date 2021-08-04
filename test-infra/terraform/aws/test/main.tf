@@ -23,7 +23,7 @@ module "infra" {
   extra_tags = {
     demo = true
   }
-  keypair_public = "((custom_keypair.ssh_pub))"
+  keypair_public = "custom_keypair/ssh_pub"
   private_subnets = [
     "10.0.1.0/24"
   ]
