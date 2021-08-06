@@ -12,15 +12,14 @@
 module "nexus" {
   source = "./module-nexus"
 
-  customer      = var.customer
-  disk_size     = 20
-  ebs_optimized = false
-  env           = var.env
+  customer  = var.customer
+  disk_size = 20
+  env       = var.env
   extra_tags = {
     demo = true
   }
   instance_type  = "t3.micro"
-  keypair_public = "${data.terraform_remote_state.infra.outputs.keypair_public}"
+  keypair_public = var.keypair_public
   project        = var.project
   public_subnets = "${data.terraform_remote_state.infra.outputs.public_subnets}"
   vpc_id         = "${data.terraform_remote_state.infra.outputs.vpc_id}"
