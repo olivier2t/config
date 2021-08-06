@@ -9,7 +9,7 @@ config_git_branch: main
 config_git_private_key: ((ssh_github.ssh_key))
 config_terraform_path: nexus/terraform/aws/demo
 config_ansible_path: nexus/ansible/environments/demo
-stack_git_repository: 'git@github.com:olivier2t/stack-infra.git'
+stack_git_repository: 'git@github.com:olivier2t/stack-nexus.git'
 stack_git_branch: main
 stack_terraform_path: terraform/aws
 stack_ansible_path: ansible/environments
@@ -24,6 +24,7 @@ ansible_version: v2.7
 ansible_params:
   SSH_JUMP_URL: ((bastion_url))
   SSH_PRIVATE_KEYS:
+    - ((keypair_private))
     - ((keypair_private))
     - ((keypair_private))
   ANSIBLE_PLAYBOOK_PATH: ansible-playbook/
