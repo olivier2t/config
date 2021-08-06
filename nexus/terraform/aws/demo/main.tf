@@ -20,9 +20,9 @@ module "nexus" {
     demo = true
   }
   instance_type  = "t3.micro"
-  keypair_public = data.terraform_remote_state.infra.keypair_public
+  keypair_public = "${data.terraform_remote_state.infra.outputs.keypair_public}"
   project        = var.project
-  public_subnets = data.terraform_remote_state.infra.public_subnets
-  vpc_id         = data.terraform_remote_state.infra.vpc_id
+  public_subnets = "${data.terraform_remote_state.infra.outputs.public_subnets}"
+  vpc_id         = "${data.terraform_remote_state.infra.outputs.vpc_id}"
 }
 
