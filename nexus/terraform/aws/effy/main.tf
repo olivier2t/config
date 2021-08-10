@@ -13,7 +13,7 @@ module "nexus" {
   source = "./module-nexus"
 
   customer  = var.customer
-  disk_size = 20
+  disk_size = 15
   env       = var.env
   extra_tags = {
     demo = true

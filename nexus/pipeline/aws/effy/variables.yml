@@ -8,16 +8,6 @@
 #
 # Any extra variables not found in the original file have been ignored.
 #
-ansible_params:
-  ANSIBLE_PLAYBOOK_NAME: main.yml
-  ANSIBLE_PLAYBOOK_PATH: ansible-playbook/
-  EXTRA_ANSIBLE_VARS:
-    customer: olivier2t
-    env: effy
-    project: nexus
-  SSH_JUMP_URL: ((bastion_url))
-  SSH_PRIVATE_KEYS:
-  - ((keypair_private))
 ansible_version: v2.7
 aws_access_key: ((aws_aws-olivier.access_key))
 aws_region: eu-west-1
