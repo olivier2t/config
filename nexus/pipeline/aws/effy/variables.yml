@@ -26,7 +26,7 @@ keypair_public: ((custom_keypair.ssh_pub))
 project: nexus
 stack_ansible_path: ansible/environments
 stack_git_branch: main
-stack_git_repository: git@github.com:olivier2t/stack-nexus.git
+stack_git_repository: https://github.com/olivier2t/stack-nexus.git
 stack_terraform_path: terraform/aws
 terraform_storage_bucket_name: olivier2t-terraform-remote-state
 terraform_version: 0.15.2
